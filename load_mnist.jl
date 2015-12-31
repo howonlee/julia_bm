@@ -1,7 +1,7 @@
 include("bm.jl")
 using PyPlot
 
-function try_net(num_vars, num_iters, file_name)
+function data_generation(num_vars, num_iters, file_name)
   net_file = open(file_name)
   pats = bm.mnist_patterns(400)
   bm_net = deserialize(net_file)
@@ -29,7 +29,7 @@ function try_net(num_vars, num_iters, file_name)
   println("all saved")
 end
 
-function try_net_old(num_vars, num_iters, file_name)
+function data_completion(num_vars, num_iters, file_name)
   net_file = open(file_name)
   bm_net = deserialize(net_file)
   close(net_file)
@@ -63,9 +63,8 @@ function try_net_old(num_vars, num_iters, file_name)
   show()
 end
 
-# assert len(ARGS) == 5
 num_vars = parse(Int, ARGS[1])
 num_iters = parse(Int, ARGS[2])
 file_name = ARGS[3]
-try_net(num_vars, num_iters, file_name)
-# print_net(file_name)
+data_generation(num_vars, num_iters, file_name)
+# data_completion(num_vars, num_iters, file_name)

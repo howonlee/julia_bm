@@ -9,6 +9,6 @@ Then, look at pretty pictures with load_mnist.sh. There's a data completion and 
 
 If anything goes wrong or you want to eat my brains or whatever, email me at hlee . howon at the email service by the search giant.
 
-You need MNIST in the containing folder. Download it at Lecun's thingy. I think I used MNIST's pickle? Is it actually a pickle? Anyways, it's at:
+You need MNIST in the containing folder. Download it at Y. Lecun's site. I think I used MNIST's pickle? Is it actually a pickle? Anyways, it's at:
 
 http://www.iro.umontreal.ca/~lisa/deep/data/mnist/mnist.pkl.gz
